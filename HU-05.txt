@@ -1,0 +1,11 @@
+Descargar certificado desde el perfil
+
+Descripción: Como participante quiero poder descargar mis certificados desde mi perfil personal para tenerlos disponibles cuando los necesite.
+
+Criterios de aceptación: El participante debe acceder a un listado de eventos donde participó y visualizar los certificados disponibles. El sistema debe permitir la descarga en PDF de cada certificado.
+
+Notas técnicas: Se requiere autenticar al usuario para acceder a su perfil. Los certificados deben estar almacenados y disponibles de forma segura en la nube o servidor.
+
+Prioridad: Media.
+
+Story point: 1
