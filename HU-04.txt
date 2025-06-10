@@ -1,0 +1,11 @@
+Validar certificados con código QR
+
+Descripción: Como participante o institución quiero poder validar un certificado mediante un código QR para comprobar su autenticidad.
+
+Criterios de aceptación: El certificado debe contener un código QR que redirige a una URL única de validación. La URL debe mostrar los datos del certificado y un mensaje de validación con firma digital.
+
+Notas técnicas: Se debe generar un identificador único por certificado y almacenar en la base de datos. Se requiere un módulo público de verificación accesible desde cualquier navegador.
+
+Prioridad: Media.
+
+Story points: 2
