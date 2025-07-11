@@ -15,3 +15,11 @@ def suma(a, b):
         return None
     return None
 
+def cuadrado(num):
+    try:
+        numero = int(num)
+        return numero ** 2
+    except (TypeError, ValueError):
+        return None
+    
+

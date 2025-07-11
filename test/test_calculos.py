@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 
-from calculos import multiplicacion, suma
+from calculos import multiplicacion, suma, cuadrado
 
 import pytest
 
@@ -38,3 +38,19 @@ def test_varios_casos_multiplicacion(valor_a, valor_b, resultado):
 )
 def test_varios_casos_suma(valor_a, valor_b, resultado):
     assert suma(valor_a, valor_b) == resultado
+
+@pytest.mark.parametrize(
+    "valor, resultado",
+    [
+        (2, 4),
+        (-3, 9),
+        (0, 0),
+        (None, None),
+        ('4', 16),
+        ('abc', None),
+        (2.5, 4),     
+        ("2.0", None) 
+    ]
+)
+def test_varios_casos_cuadrado(valor, resultado):
+    assert cuadrado(valor) == resultado
