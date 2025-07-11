@@ -1,0 +1,19 @@
+from calculos import suma
+import pytest
+
+@pytest.mark.parametrize(
+    "valor_a, valor_b, resultado",
+    [
+        (2, 3, 5),           
+        (2, -3, -1),           
+        (0, 5, 5),
+        (None, 5, None),     
+        (None, None, None), 
+        (2, None, None),    
+        ('2', 5, 7),
+        (2, suma(2, 2), 6),
+    ]
+)
+def test_varios_casos(valor_a, valor_b, resultado):
+    assert suma(valor_a, valor_b) == resultado
+
