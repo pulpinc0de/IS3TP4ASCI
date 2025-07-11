@@ -1,5 +1,9 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../src')))
+
+from calculos import multiplicacion
 from behave import given, when, then
-from ..
 
 @given('que ingreso los números {a:d} y {b:d}')
 def step_given_numeros(context, a, b):
